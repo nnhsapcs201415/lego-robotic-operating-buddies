@@ -23,7 +23,7 @@ public class SquareTracer
     public static void main(String[] args)
     {
         SquareTracer sq = new SquareTracer();
-        sq.pilot = new DifferentialPilot(2.25f, 5.5f, Motor.A, Motor.C);
-        sq.drawSquare(20);
+        sq.pilot = new DifferentialPilot(7.5, 22.5, Motor.A, Motor.C);
+        sq.drawSquare(40);
     }
 }
