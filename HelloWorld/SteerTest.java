@@ -1,6 +1,7 @@
 import lejos.nxt.Motor;
 import lejos.robotics.navigation.DifferentialPilot;
 import lejos.util.ButtonCounter;
+import lejos.nxt.Button;
 
 /**
  * Test the turn() method 
@@ -12,13 +13,15 @@ public class SteerTest
     {
         DifferentialPilot pilot = new DifferentialPilot(7.5, 22.5, Motor.A, Motor.C); 
         ButtonCounter bc = new ButtonCounter();
-        while(true)
-        {
-            bc.count("Turn Rate x10");
-            int turnRate = 100 * bc.getLeftCount() + 10 * bc.getRightCount();
-            bc.count("Angle x 10");
-            int angle = 100 * bc.getLeftCount() + 10 * bc.getRightCount();
-            pilot.steer(turnRate,angle);                  
-        }
+        System.out.println(" Steer Test");
+        Button.waitForAnyPress();
+//         while(true)
+//         {
+//             bc.count("Turn Rate x10");
+//             int turnRate = 100 * bc.getLeftCount() + 10 * bc.getRightCount();
+//             bc.count("Angle x 10");
+//             int angle = 100 * bc.getLeftCount() + 10 * bc.getRightCount();
+//             pilot.steer(turnRate,angle);                  
+//         }
     }
 }
