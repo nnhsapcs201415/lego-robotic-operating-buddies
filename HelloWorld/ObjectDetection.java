@@ -1,6 +1,10 @@
 import lejos.robotics.objectdetection.RangeFeature;
 import lejos.nxt.LCD;
 import lejos.nxt.Motor;
+import lejos.nxt.UltrasonicSensor;
+import lejos.robotics.objectdetection.RangeFeatureDetector;
+import lejos.robotics.objectdetection.FeatureDetector;
+
 
 public class ObjectDetection
 {
