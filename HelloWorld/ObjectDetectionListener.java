@@ -1,5 +1,7 @@
-import lejos.nxt.FeatureListener;
-import lejos.robotics.objectdetection.*;
+import lejos.robotics.objectdetection.FeatureListener;
+import lejos.robotics.objectdetection.RangeFeatureDetector;
+import lejos.nxt.UltrasonicSensor;
+import lejos.robotics.objectdetection*;
 
 
 /**
