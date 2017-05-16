@@ -4,7 +4,7 @@ import lejos.nxt.TouchSensor;
 
 public class TouchTest {
   public static void main(String[] args) throws Exception {
-    TouchSensor touch = new TouchSensor(SensorPort.S1);
+    TouchSensor touch = new TouchSensor(SensorPort.S2);
     while (!touch.isPressed()) {
     	// try again
     }

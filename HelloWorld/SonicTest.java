@@ -1,10 +1,11 @@
 import lejos.nxt.UltrasonicSensor;
 import lejos.nxt.LCD;
 import lejos.nxt.Button;
+import lejos.nxt.SensorPort;
 
 public class SonicTest {
   public static void main(String[] args) throws Exception {
-    UltrasonicSensor sonic = new UltrasonicSensor(SensorPort.S1);
+    UltrasonicSensor sonic = new UltrasonicSensor(SensorPort.S2);
 
     while (!Button.ESCAPE.isDown()) {
       LCD.clear();

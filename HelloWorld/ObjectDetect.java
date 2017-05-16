@@ -1,16 +1,18 @@
 import lejos.robotics.objectdetection.FeatureListener;
 import lejos.robotics.objectdetection.RangeFeatureDetector;
 import lejos.nxt.UltrasonicSensor;
-import lejos.robotics.objectdetection*;
-
-
+import lejos.robotics.objectdetection.Feature;
+import lejos.nxt.Sound;
+import lejos.nxt.Button;
+import lejos.robotics.objectdetection.FeatureDetector;
+import lejos.nxt.SensorPort;
 /**
  * Write a description of class ObjectDetection here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class ObjectDetectionListener implements FeatureListener
+public class ObjectDetect implements FeatureListener
 {
 
 
@@ -19,7 +21,7 @@ public class ObjectDetectionListener implements FeatureListener
 	public static void main(String[] args) throws Exception {
 		
 		ObjectDetect listener = new ObjectDetect();
-		UltrasonicSensor us = new UltrasonicSensor(SensorPort.S4);
+		UltrasonicSensor us = new UltrasonicSensor(SensorPort.S2);
 		RangeFeatureDetector fd = new RangeFeatureDetector(us, MAX_DETECT, 500);
 		fd.addListener(listener);
 		Button.ENTER.waitForPressAndRelease();
