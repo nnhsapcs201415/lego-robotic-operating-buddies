@@ -1,4 +1,3 @@
-
 import lejos.nxt.Button;
 
 public class HelloWorld
