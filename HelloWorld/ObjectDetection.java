@@ -1,21 +1,12 @@
-import lejos.robotics.objectdetection.RangeFeature;
-import lejos.nxt.I2CPort;
-import lejos.robotics.objectdetection.Feature;
-import lejos.nxt.UltrasonicSensor;
-import lejos.robotics.objectdetection.FeatureListener;
-import lejos.robotics.objectdetection.RangeFeatureDetector;
-import lejos.robotics.objectdetection.FeatureDetector;
-import lejos.nxt.SensorPort;
-import lejos.nxt.Button;
-import lejos.nxt.Sound;
+import lejos.nxt.*;
+import lejos.robotics.objectdetection.*;
 
 
 
-public class ObjectDetection
+public class ObjectDetection implements FeatureListener
 {
     private static int MAX_DETECT = 80;
-    //private static int MAX_DISTANCE = 50; //centimeters
-    //private static int PERIOD = 500; // milliseconds
+
     public static void main(String[] args) throws Exception {
 		
 		ObjectDetect listener = new ObjectDetect();
@@ -24,15 +15,11 @@ public class ObjectDetection
 		fd.addListener(listener);
 		Button.ENTER.waitForPressAndRelease();
 	}
-	
-//     public static void main(String[] args)
-//     {
-//         UltrasonicSensor sensor = new UltrasonicSensor(SensorPort.S4);
-//         FeatureDetector detector = new RangeFeatureDetector( sensor, MAX_DISTANCE, PERIOD); 
-//         Feature result = detector.scan();
-//         if( result != null)
-//         {
-//             System.out.println("Range: " + result.getRangeReading().getRange());
-//         }
-//     }
+
+	public void featureDetected(Feature feature, FeatureDetector detector) {
+		int range = (int)feature.getRangeReading().getRange();
+		Sound.playTone(1200 - (range * 10), 100);
+		System.out.println("Range:" + range);
+	}
 }
+

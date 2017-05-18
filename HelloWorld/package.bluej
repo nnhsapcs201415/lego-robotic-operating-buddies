@@ -3,19 +3,11 @@ dependency1.from=ObjectDetection
 dependency1.to=ObjectDetect
 dependency1.type=UsesDependency
 objectbench.height=77
-<<<<<<< HEAD
-objectbench.width=658
-package.editor.height=389
-package.editor.width=560
-package.editor.x=935
-package.editor.y=81
-=======
 objectbench.width=804
 package.editor.height=837
 package.editor.width=706
 package.editor.x=840
 package.editor.y=0
->>>>>>> origin/master
 package.numDependencies=1
 package.numTargets=14
 package.showExtends=true
@@ -181,15 +173,9 @@ target8.width=110
 target8.x=250
 target8.y=330
 target9.editor.height=700
-<<<<<<< HEAD
-target9.editor.width=721
-target9.editor.x=921
-target9.editor.y=124
-=======
 target9.editor.width=900
 target9.editor.x=646
 target9.editor.y=183
->>>>>>> origin/master
 target9.height=50
 target9.name=MotorProgram3
 target9.naviview.expanded=true
