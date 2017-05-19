@@ -1,4 +1,5 @@
-import lejos.nxt.Button;
+import lejos.nxt.*;
+import lejos.robotics.objectdetection.*;
 
 public class HelloWorld
 {
@@ -8,4 +9,3 @@ public class HelloWorld
         Button.waitForAnyPress();
     }
 }
-9
