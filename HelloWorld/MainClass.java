@@ -1,7 +1,7 @@
 import lejos.nxt.*;
 import lejos.robotics.objectdetection.*;
 
-public class HelloWorld
+public class MainClass
 {
     public static void main (String[] args)
     {

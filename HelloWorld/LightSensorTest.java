@@ -17,7 +17,7 @@ public class LightSensorTest implements SensorPortListener {
     }
     public void stateChanged(SensorPort aSource, int aOldValue, int aNewValue)
     {
-        if( aOldValue != aNewValue)
+        if( aOldValue != aNewValue )
         {
             System.out.println( aNewValue );
            }
