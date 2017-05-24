@@ -23,7 +23,7 @@ public class MainClass
             {}
             if( state == 3 ) // back up from line
             {
-                
+                Motor.C.backward();
             }            
         }
     }
