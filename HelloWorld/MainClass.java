@@ -21,8 +21,10 @@ public class MainClass
             {}
             if( state == 2 ) // push can 
             {}
-            if( state == 3 ) // 
-            {}            
+            if( state == 3 ) // back up from line
+            {
+                
+            }            
         }
     }
 }
