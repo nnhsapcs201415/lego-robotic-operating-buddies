@@ -8,4 +8,3 @@ public class HelloWorld
         Button.waitForAnyPress();
     }
 }
-9
