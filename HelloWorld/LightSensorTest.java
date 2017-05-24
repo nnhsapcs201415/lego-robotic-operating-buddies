@@ -4,7 +4,7 @@ import lejos.robotics.objectdetection.*;
 
 
 public class LightSensorTest implements SensorPortListener {
-    
+
     public LightSensorTest()
     {
         SensorPort.S3.addSensorPortListener(this);
@@ -21,6 +21,7 @@ public class LightSensorTest implements SensorPortListener {
         {
             System.out.println( aNewValue );
            }
+       
        }
 
 }
